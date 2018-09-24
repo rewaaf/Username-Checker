@@ -12,12 +12,12 @@ def result():
     upper = False
     lower = False
     num_end = False
-    for item in username: #must search for whole string
+    for item in username: #must search for the whole string
         if item.isupper():
             upper = True
         if item.islower():
             lower = True
-    if item[-1].isdigit(): #doesn't require search just check last digit
+    if username[-1].isdigit(): #doesn't require search just check last digit
         num_end = True
     if upper and lower and num_end:
         end_result = True
